@@ -6,7 +6,8 @@ require("colors")
 db()
 const app = express()
 app.use(express.json())   //req.body mdhe data yeto
-app.use(express.static("public"))   //req.body mdhe data yeto
+app.use(express.static("public"))
+
 app.use(cors({
     origin: ["http://localhost:5173", "http://127.0.0.1:5173"],
     method: ["GET"]
